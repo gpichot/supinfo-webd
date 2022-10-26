@@ -4,7 +4,7 @@
 // pour récupérer la valeur de l'opérande.
 
 /**
- * Cette fonction ajouter l'opération l'historique
+ * Cette fonction ajoute l'opération dans l'historique
  */
 function afficherCalculDansHistorique(calcul) {
   const listeHistorique = document.querySelector("#historique");
