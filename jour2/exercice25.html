@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <img src="./images/pikachu.png" alt="Pikachu" />
+    <script type="text/javascript">
+      // On peut aussi mettre du JavaScript dans la page HTML mais c'est moins
+      // courant
+      const image = document.querySelector("img");
+      image.addEventListener("mouseenter", () => {
+        image.src = "./images/raichu.png";
+      });
+      image.addEventListener("mouseleave", () => {
+        image.src = "./images/pikachu.png";
+      });
+    </script>
+  </body>
+</html>
