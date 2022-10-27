@@ -10,42 +10,29 @@
     <title>tp</title>
   </head>
   <body>
-    h1 est un titre
-    <h1>tp</h1>
-    <h2>block 1</h2>
-
-    <h1>tp formulaire</h1>
-
-    <h1>tp otp</h1>
-
     <div class="otp">
-      <div class="at">
-        <h2>Administration</h2>
-        <p>
-          enter the code you received at <br />
-          +33******923
-        </p>
+      <h2>Administration</h2>
+      <p>
+        enter the code you received at<br />
+        <strong>+33******923</strong>
+      </p>
 
-        <ul>
-          <li>
-            <input type="text" name="case1" size="1" maxlength="1" />
-          </li>
-          <li>
-            <input type="text" name="case2" size="1" maxlength="1" />
-          </li>
-          <li><input type="text" name="case3" size="1" maxlength="1" />-</li>
-          <li>
-            <input type="text" name="case4" size="1" maxlength="1" />
-          </li>
-          <li>
-            <input type="text" name="case5" size="1" maxlength="1" />
-          </li>
-          <li>
-            <input type="text" name="case6" size="1" maxlength="1" />
-          </li>
-        </ul>
+      <div class="otpInput">
+        <div class="inputBloc">
+          <input type="text" name="case1" size="1" maxlength="1" />
+          <input type="text" name="case2" size="1" maxlength="1" />
+          <input type="text" name="case3" size="1" maxlength="1" />
+        </div>
+        <div class="separateur">-</div>
+        <div class="inputBloc">
+          <input type="text" name="case4" size="1" maxlength="1" />
+          <input type="text" name="case5" size="1" maxlength="1" />
+          <input type="text" name="case6" size="1" maxlength="1" />
+        </div>
+      </div>
 
-        <button type="submit">envoyer</button>
+      <div class="actions">
+        <button type="submit">Resend Code</button>
       </div>
     </div>
     <script type="text/javascript" src="./exercice31-otp.js"></script>
