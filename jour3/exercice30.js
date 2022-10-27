@@ -1,6 +1,9 @@
 const div = document.createElement("div");
 div.classList.add("main");
 
+div.style.backgroundColor = "purple";
+div.style.padding = "1rem";
+
 const body = document.querySelector("body");
 body.appendChild(div);
 
