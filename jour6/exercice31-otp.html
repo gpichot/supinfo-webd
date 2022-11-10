@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="stylesheet" href="./exercice31-otp.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keyword" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>tp</title>
+  </head>
+  <body>
+    <div class="otp">
+      <h2>Administration</h2>
+
+      <div id="emailForm">
+        <form>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="dupond.dupont@supinfo.com"
+            style="
+              padding: 0.5rem 0.8rem;
+              border-radius: 5px;
+              width: 200px;
+              border: 1px solid rgba(40, 40, 40, 0.2);
+            "
+          />
+          <div class="actions">
+            <button id="sendMyOTPCode">Send Code</button>
+          </div>
+        </form>
+      </div>
+      <div id="otpForm" style="display: none">
+        <form>
+          <div id="message"></div>
+          <p>
+            enter the code you received at<br />
+            <strong>+33******923</strong>
+
+            <details id="showCode">
+              <summary>Code from API</summary>
+            </details>
+          </p>
+          <input type="hidden" name="email" id="emailCache" />
+          <div class="otpInput" id="otpInput">
+            <div class="inputBloc">
+              <input type="text" name="case1" size="1" maxlength="1" />
+              <input type="text" name="case2" size="1" maxlength="1" />
+              <input type="text" name="case3" size="1" maxlength="1" />
+            </div>
+            <div class="separateur">-</div>
+            <div class="inputBloc">
+              <input type="text" name="case4" size="1" maxlength="1" />
+              <input type="text" name="case5" size="1" maxlength="1" />
+              <input type="text" name="case6" size="1" maxlength="1" />
+            </div>
+          </div>
+
+          <div class="actions">
+            <button>Resend Code</button>
+            <button type="submit" id="sendCode">Send Code</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="./exercice31-otp.js"></script>
+  </body>
+</html>

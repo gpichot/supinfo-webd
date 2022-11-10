@@ -1,0 +1,76 @@
+body {
+  background-color: rgb(95, 145, 191);
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.otp {
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 2rem;
+  width: 500px;
+  max-width: 100%;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.otpInput {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 1rem;
+  align-items: center;
+}
+
+.otpInput input {
+  border: 1px solid rgb(95, 145, 191);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.inputBloc {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.inputBloc input:first-child {
+  border-radius: 5px 0 0 5px;
+}
+.inputBloc input:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.inputBloc input:not(:last-child) {
+  border-right-width: 0;
+}
+
+.separateur {
+  margin: 0 1rem;
+}
+
+.actions {
+  margin: 1rem 0;
+}
+.actions button {
+  background-color: rgb(73, 110, 167);
+  color: white;
+  padding: 0.5rem 0.8rem;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+#sendCode:focus {
+  outline: rgb(73, 110, 167);
+  background-color: red;w
+}
